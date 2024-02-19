@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #666;
+        padding: 10px 0;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    section {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+        background-color: beige;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form{
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 1200px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(5, 1, 1, 0.1);
+    }
+    .log{
+        text-align: center;
+    }
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .email, .phone, .loc{
+        border-style: solid;
+        border-radius: 1px auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Contact</h1>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="skill.html">Skills</a>
+    <a href="contact.html">Contact</a>
+    <a href="project.html">Recent Project</a>
+</nav>
+
+<section>
+    <div class="contact">
+        <div>
+            <h2>Contact Information</h2>
+            <div class="phone">
+                <p><i class="fas fa-phone"></i> (+63) 9104117667</p>
+            </div><br>
+            <div class="email">
+                <p><i class="fas fa-envelope"></i> lestercaponpon@gmail.com</p>
+            </div><br>
+            <div class="loc">
+                <p><i class="fas fa-map-marker-alt"></i> 350, San Pablo Sto Tomas Batangas</p>
+            </div>
+        </div>
+            <form action="contact" method="POST">
+
+                <h1 class="log">Contact Us</h1>
+
+                <label for="number">Phone Number:</label><br>
+                <input type="text" id="number" name="number" placeholder="Enter Your Conctact"><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email"><br>
+    
+                <label for="location">Location:</label><br>
+                <input type="text" id="location" name="location" placeholder="Enter Your Address"><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Please Enter Your Concern"></textarea><br><br>
+                
+                <input type="button" value="SUBMIT">
+            </form>
+    </div>
+</section>
+<div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d241.8706071826727!2d121.18820790150095!3d14.081326284883646!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1708091303591!5m2!1sen!2sph" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<footer>
+    <p>Sheesh Good Game Mate.</p>
+</footer>
+
+</body>
+</html>
